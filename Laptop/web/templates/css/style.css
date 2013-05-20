@@ -1,0 +1,85 @@
+body.bg{background:#fff url(../images/pineapplecut.png)}
+a,.nssp2.ns2-vm p.ns2-vm-price,span.sp-color{color:#02ABD6}
+a:hover,a:active,a:focus{color:#333}
+a#logo{background:url(../images/logo.png) no-repeat 0 50%}
+#toparea{background:url(../images/bg.png) #02a6cf;box-shadow: 0 5px 4px -3px #999;}
+
+a.readmore,a.sp-slide-morein,
+span.addtocart-button input.addtocart-button, span.addtocart-button input.notify-button,
+.vm-button-correct,.vm-button-correct:link,.vm-button-correct:visited
+ {
+	background:#0e9cb8;
+	background: -moz-linear-gradient(top, #00b6dc 0%, #0e9cb8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b6dc), color-stop(100%,#0e9cb8));
+	background: -webkit-linear-gradient(top, #00b6dc 0%,#0e9cb8 100%);
+	background: -o-linear-gradient(top, #00b6dc 0%,#0e9cb8 100%);
+	background: -ms-linear-gradient(top, #00b6dc 0%,#0e9cb8 100%);
+	background: linear-gradient(top, #00b6dc 0%,#0e9cb8 100%);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#00b6dc', EndColorStr='#0e9cb8'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#00b6dc', EndColorStr='#0e9cb8')"; /* IE8 */
+	border-left:1px solid #0ac9f4; border-top:1px solid #0ac9f4;
+	border-right:1px solid #0190b1;border-bottom: 1px solid #0190b1; 
+	text-shadow: 0 1px #0190b1
+}
+a.readmore:hover,a.sp-slide-morein:hover,
+span.addtocart-button input.addtocart-button:hover, span.addtocart-button input.notify-button:hover,
+.vm-button-correct:hover {
+	background:#0ac9f4;
+	background: -moz-linear-gradient(top, #0ac9f4 0%, #08bae2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0ac9f4), color-stop(100%,#08bae2));
+	background: -webkit-linear-gradient(top, #0ac9f4 0%,#08bae2 100%);
+	background: -o-linear-gradient(top, #0ac9f4 0%,#08bae2 100%);
+	background: -ms-linear-gradient(top, #0ac9f4 0%,#08bae2 100%);
+	background: linear-gradient(top, #0ac9f4 0%,#08bae2 100%);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#0ac9f4', EndColorStr='#08bae2'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#0ac9f4', EndColorStr='#08bae2')"; /* IE8 */	
+	border-left:1px solid #44ddff; border-top:1px solid #44ddff;
+	border-right:1px solid #0190b1;border-bottom: 1px solid #0190b1; 
+	text-shadow: 0 1px #0190b1
+}
+
+.adminform button:hover,#adminForm button:hover,.button:hover,button[type=submit]:hover,input[type=submit]:hover,input[type=button]:hover,
+a.product-details:hover,a.details:hover,div.details:hover, a.ask-a-question:hover,
+span.details-button input.details-button:hover,
+div.pagination ul li a:hover,div.pagination ul li.pagination-active a
+{border:1px solid #1fd0fc; background:#00b3e0}
+
+div.pagination ul li a:hover,div.pagination ul li.pagination-active a {background-color:#0e9cb8;border:1px solid #15adcb}
+
+/*Menu*/
+#hornav ul.level-0 > li.menu-item{background:#00a6ce;border-right:1px solid #0081a0;border-bottom:1px solid #0081a0;border-left:1px solid #17bde7;border-top:1px solid #17bde7}
+#hornav ul.level-0 > li.menu-item:hover,#hornav ul.level-0 > li.menu-item.active{background:#05bae7;border-right:1px solid #0182a1;border-bottom:1px solid #0182a1;border-left:1px solid #38ccf2;border-top:1px solid #38ccf2}
+#hornav ul.level-0 > li.menu-item > a.menu-item,
+#sublevel ul.level-1 > li.menu-item > a.menu-item{color:#fff;text-shadow:0 1px #035682}
+
+#hornav ul.level-0 > li.menu-item.parent:hover{border-bottom:0}
+
+#hornav ul li .submenu-inner,#sublevel ul li .submenu-inner {background:#05bae7;border-right:1px solid #0182a1;border-bottom:1px solid #0182a1;border-left:1px solid #38ccf2;color:#fff}
+
+#hornav li.menu-item li.menu-item:hover, #hornav li.menu-item li.menu-item.active,
+#sublevel li.menu-item li.menu-item:hover, #sublevel li.menu-item li.menu-item.active{background:#01c5f6}
+
+#hornav li.menu-item li.menu-item a.menu-item,
+#sublevel li.menu-item li.menu-item a.menu-item{text-shadow:0 1px rgba(0,0,0,.1);border-top:1px solid #38ccf0}
+
+#hornav .megacol > ul.sp-menu {border-right:1px solid #38ccf0}
+.rtl #hornav .megacol > ul.sp-menu {border-right:0!important;border-left:1px solid #38ccf0}
+#hornav .group-title{border-bottom:1px solid #38ccf0}
+
+/*Others*/
+#sp-slides  h2.sp-slide-title{color:#02ABD6;}
+#sp-slides .controllers span{background:url(../images/slide_controller.png) 0 -18px no-repeat}
+#sp-slides .controllers span.active{background:url(../images/slide_controller.png) 0 2px no-repeat}
+
+/*K2 Specific*/
+div.itemRelated li a:hover,div.itemAuthorLatest li a:hover,
+div.itemCommentsForm p.itemCommentsFormNotes {color:#bc0202}
+div.k2TagCloudBlock a:hover {background: #0e9cb8;
+	border-left:1px solid #0ac9f4; border-top:1px solid #0ac9f4;
+	border-right:1px solid #0190b1;border-bottom: 1px solid #0190b1;
+	text-shadow: 0 1px #0190b1	
+}
+
+/*VirtueMart*/
+.product-neighbours a.previous-page{background:url(../images/control.png) 0 2px no-repeat}
+.product-neighbours a.next-page{background:url(../images/control.png) 100% -19px no-repeat}

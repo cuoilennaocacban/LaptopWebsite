@@ -1,0 +1,61 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Helix Framework   
+# ---------------------------------------------------------------
+# Author - JoomShaper http://www.joomshaper.com
+# Copyright (C) 2010 - 2012 JoomShaper.com. All Rights Reserved.
+# license - PHP files are licensed under  GNU/GPL V2
+# license - CSS  - JS - IMAGE files  are Copyrighted material 
+# Websites: http://www.joomshaper.com
+-----------------------------------------------------------------*/
+#sp-slides{background:#fff;padding-bottom: 10px;}
+#sp-slides .sp-slide-content{background:#fff;}
+#sp-slides  img.sp-slide-image{background:#fff!important;border:0!important;float:right!important}
+#sp-slides  .sp-slide-desc {margin-top: 20px;}
+#sp-slides  .sp-slide-desc .sp-slide-intro{color:#6f6f6f;font-size: 130%;line-height: 1.5;}
+#sp-slides h2.sp-slide-title{background:none;font-size:35px!important;font-weight: normal;letter-spacing: 0.5px;margin:0;padding:0}
+#sp-slides .controllers{text-align:center}
+#sp-slides .controllers span{display:inline-block;height:19px;width:19px;text-indent:-9999px;cursor: pointer;margin-right:5px}
+#sp-slides .controllers span.active{}
+
+/* Latest blog */
+.ns2-blog .ns2-row {border-top:1px solid #EAEAEA;margin-top:10px}
+.ns2-blog .ns2-row:hover {border-top:1px solid #fff}
+.ns2-blog .ns2-row.ns2-first {border-top:0;margin-top:0}
+h4.ns2-title a {color:#999}
+.ns2-blog .ns2-links a.ns2-comments {color:#999}
+
+/* Vendor Scroller */
+.ns2-scroller .ns2-art-wrap {padding:0 20px}
+.ns2-scroller .ns2-inner {text-align:center}
+.ns2-scroller img.ns2-image {opacity:.4}
+.ns2-scroller img.ns2-image:hover {opacity:1}
+.ns2-scroller .ns2-art-prev,.ns2-scroller .ns2-art-next{position:absolute;top:50%;margin-top:-21px;text-indent:-9000px;height:43px;width:43px;z-index:999}
+.ns2-scroller .ns2-art-prev{left:-23px;background:url(../images/ns2-prev.png) no-repeat}
+.ns2-scroller .ns2-art-next{right:-23px;background:url(../images/ns2-next.png) no-repeat}
+.ns2-scroller div .ns2-art-next:hover,.ns2-scroller div .ns2-links-next:hover,.ns2-scroller div .ns2-art-prev:hover,.ns2-scroller div .ns2-links-prev:hover{background-position:0 0!important}
+
+/*SP Tab*/
+ul.tabs_container li.tab{background:#fff;float:left;padding:0 10px;margin:0 5px 0 0!important;border:1px solid #fff}
+ul.tabs_container li.tab, ul.tabs_container li.tab span{font-size:13px;font-weight:700;color:#888;}
+ul.tabs_container li.tab.active {background:#f5f5f5;border-bottom:1px solid #f5f5f5}
+.tab-padding {background:#f5f5f5;border-top:1px solid #fff; 	border-left:1px solid #fff;border-right:1px solid #ccc;border-bottom:1px solid #ccc}
+.tabs_buttons {position:relative;z-index:99;margin-bottom:-1px;}
+
+.rtl ul.tabs_container li.tab {float:right!important;margin:0 0 0 5px!important}
+
+/*Virtuemart layout*/
+.nssp2.ns2-vm .ns2-inner {border:1px solid #fff; background:#f5f5f5;padding:10px}
+.nssp2.ns2-vm .ns2-inner:hover {background:#ebebeb}
+.nssp2.ns2-vm .ns2-inner:hover {background:#ebebeb}
+.ns2-vm-bar {padding-top:5px}
+.nssp2.ns2-vm p.ns2-vm-price {float:left;font-size:13px;font-weight:700;margin:5px 0 0 0}
+.nssp2.ns2-vm .ns2-addtocart {float:right}
+
+/*Image*/
+div.itemListCategory img,div.itemComments ul.itemCommentsList li img,span.genericItemImage img,
+div.k2LatestCommentsBlock ul li a.lcAvatar img,.k2Avatar img,
+div.itemAuthorBlock img.itemAuthorAvatar {background:none!important;border:0!important;padding:0!important}
+
+/* Bottom Social Image*/
+.footer_social{opacity:.5}
+.footer_social:hover{opacity:1}

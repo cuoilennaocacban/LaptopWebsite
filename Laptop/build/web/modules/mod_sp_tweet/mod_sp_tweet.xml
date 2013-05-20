@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>SP Tweet</name>
+	<author>JoomShaper.com</author>
+	<creationDate>Dec 2010</creationDate>
+	<copyright>Copyright (C) 2010 - 2012 JoomShaper.com. All rights reserved.</copyright>
+	<license>GNU/GPL V2 for PHP files. CSS / JS are Copyrighted Commercial</license>
+	<authorEmail>support@joomshaper.com</authorEmail>
+	<authorUrl>www.joomshaper.com</authorUrl>
+	<version>2.0.0</version>
+	<description>Ajax Twitter module for Joomla 2.5 by JoomShaper.com</description>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_sp_tweet.ini</language>
+	</languages>  
+		
+	<files>
+		<filename module="mod_sp_tweet">mod_sp_tweet.php</filename>
+		<folder>tmpl/</folder>
+		<folder>assets/</folder>
+		<folder>cache/</folder>
+		<filename>helper.php</filename>
+        <filename>json.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>	
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="username" type="text" default="joomshaper" label="TWITTER_ID" description="TWITTER_ID_DESC" />
+				<field name="style" type="list" default="1" label="STYLE" description="STYLE_DESC">
+					<option value="default">DEFAULT</option>
+					<option value="list">LIST</option>
+					<option value="bubble">BUBBLE</option>
+				</field>
+				
+				<field name="tweets" type="text" default="4" label="TWEETS" description="TWEETS_DESC"/>
+				<field name="avatar" type="radio" default="1" label="AVATAR" description="AVATAR_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="avatar_width" type="text" default="48" label="AVATAR_WIDTH" description="AVATAR_WIDTH_DESC" />	
+				
+				<field name="linked_avatar" type="radio" default="1" label="LINKED_AVATAR" description="LINKED_AVATAR_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="linked_search" type="radio" default="1" label="LINKED_SEARCH" description="LINKED_SEARCH_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="linked_mention" type="radio" default="1" label="LINKED_MENTION" description="LINKED_MENTION_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="tweet_time" type="radio" default="1" label="TWEET_TIME" description="TWEET_TIME_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="tweet_time_linked" type="radio" default="1" label="LINKED_TWEET_TIME" description="LINKED_TWEET_TIME_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="tweet_src" type="radio" default="1" label="TWEET_SRC" description="TWEET_SRC_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+
+				<field name="follow_us" type="radio" default="1" label="FOLLOW_US" description="FOLLOW_US_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="target" type="radio" default="_blank" label="NEW_WINDOW" description="NEW_WINDOW_DESC">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>	
+			</fieldset>	
+			
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" default="" label="MODSFX" description="MODSFX_DESC" />			
+				<field name="cache" type="hidden" default="0"/>
+				<field name="module_cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

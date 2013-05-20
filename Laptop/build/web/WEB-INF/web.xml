@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet-mapping>
+        <servlet-name>addtocard</servlet-name>
+        <url-pattern>/addtocard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>removeFromCard</servlet-name>
+        <url-pattern>/removeFromCard</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>15</session-timeout>
+    </session-config>
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>addtocard</servlet-name>
+        <servlet-class>Methods.addtocard</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>removeFromCard</servlet-name>
+        <servlet-class>Methods.removeFromCard</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Pages.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Pages.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet>
+            <servlet-name>Logout</servlet-name>
+            <servlet-class>Methods.Logout</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>Logout</servlet-name>
+            <url-pattern>/logout</url-pattern>
+        </servlet-mapping>
+        <servlet>
+            <servlet-name>Product</servlet-name>
+            <servlet-class>Pages.Product</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>Product</servlet-name>
+            <url-pattern>/product</url-pattern>
+        </servlet-mapping>
+        <servlet-name>Linh kien</servlet-name>
+        <servlet-class>Pages.LinhKien</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Linh kien</servlet-name>
+        <url-pattern>/linh-kien</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Khuyen mai</servlet-name>
+        <servlet-class>Pages.KhuyenMai</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Khuyen mai</servlet-name>
+        <url-pattern>/san-pham-khuyen-mai</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Hang sx</servlet-name>
+        <servlet-class>Pages.Company</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hang sx</servlet-name>
+        <url-pattern>/hang-san-xuat</url-pattern>
+    </servlet-mapping>
+</web-app>
