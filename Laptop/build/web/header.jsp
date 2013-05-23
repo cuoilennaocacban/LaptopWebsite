@@ -48,8 +48,8 @@
                                 }
                                 else {
                             %>
-                        <a href="login.jsp"><input type="submit" value="Đăng Nhập"></a>
-                        <a href="register.jsp"><input type="submit" value="Đăng Ký"></a></div>
+                        <a href="Login.jsp"><input type="submit" value="Đăng Nhập"></a>
+                        <a href="Register.jsp"><input type="submit" value="Đăng Ký"></a></div>
                         <%
                                 }
                         %>

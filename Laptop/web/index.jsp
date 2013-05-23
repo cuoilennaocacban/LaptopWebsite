@@ -29,12 +29,12 @@
                                                             <div class="ns2-column flt-left col-1">
                                                                 <table>
                                                                     <%
-                                                                        ResultSet rs = Methods.GetProduct.getProduct("select * from hot");
+                                                                        ResultSet rs = Methods.Connecting.getData("select * from hot");
                                                                         for (int j = 0; j < 5; j++) {
                                                                             out.println("<tr>");
                                                                             for (int i = 0; i < 4; i++) {
                                                                                 while (rs.next()) {
-                                                                                    ResultSet pro = Methods.GetProduct.getProduct("select * from san_pham where ma_san_pham='" + rs.getString(1) + "'");
+                                                                                    ResultSet pro = Methods.Connecting.getData("select * from san_pham where ma_san_pham='" + rs.getString(1) + "'");
                                                                                     while (pro.next()) {
                                                                     %>
 

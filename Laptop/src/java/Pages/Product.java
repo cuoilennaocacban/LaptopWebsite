@@ -27,7 +27,7 @@ public class Product extends HttpServlet {
             throws ServletException, IOException, ClassNotFoundException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
         String code = request.getParameter("code");
-        ResultSet rs = Methods.GetProduct.getProduct("SELECT * FROM SAN_PHAM where ma_san_pham='"+code+"'");
+        ResultSet rs = Methods.Connecting.getData("SELECT * FROM SAN_PHAM where ma_san_pham='"+code+"'");
         while (rs.next())
         {
             request.setAttribute("ma_san_pham",rs.getNString(1));

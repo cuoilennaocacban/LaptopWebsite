@@ -34,7 +34,7 @@ public class addtocard extends HttpServlet {
             throws ServletException, IOException, ClassNotFoundException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
         String code = request.getParameter("code");
-        if (Methods.DataSubmit.submit("update san_pham set so_luong_trong_kho = so_luong_trong_kho - 1 where ma_san_pham = '" + code + "'")) {
+        if (Methods.Connecting.submit("update san_pham set so_luong_trong_kho = so_luong_trong_kho - 1 where ma_san_pham = '" + code + "'")) {
             request.setAttribute("Added", "true");
             
         } else {

@@ -13,7 +13,7 @@
                         <div class="mod-inner clearfix">
                             <div class="custom"  >
                                 <div class="online"><span style="font-size: medium;">Mai Hiếu:</span></div>
-                                <div class="online"><span style="font-size: medium;"><br /></span></div>
+                                <div class="online"><span style="font-size: medium;"><br></span></div>
                                 <%--<div class="online"><a href="ymsgr:sendim?maitrunghieuit"> <img src="http://opi.yahoo.com/online?u=maitrunghieuit&amp;m=g&amp;t=1&amp;l=us" border="0" align="middle" /></a></div>--%>
                                 <div class="online"> </div>
                                 <div class="online" style="text-align: left;"><span style="font-size: medium;">Hotline:</span></div>
@@ -30,6 +30,14 @@
                     <div class="mod-content clearfix">
                         <div class="mod-inner clearfix">
                             <div class="custom"  >
+                                <%
+                                    String[] online = Methods.Onlines.getOnline();
+                                %>
+                                <div class="online"><span style="font-size: medium; color: blue">Lượng truy cập:</span></div>
+                                <div class="online"><span style="font-size: medium"> <%= online[0] %> </span></div>
+                                <div class="online"> </div>
+                                <div class="online"><span style="font-size: medium; color: blue">Onlines:</span></div>
+                                <div class="online"><span style="font-size: medium;"><%= online[1] %></span></div>
                             </div>
                         </div>
                     </div>

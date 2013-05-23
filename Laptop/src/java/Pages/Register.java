@@ -6,7 +6,6 @@ package Pages;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
@@ -35,8 +34,8 @@ public class Register extends HttpServlet {
         String address = request.getParameter("address");
         String phone = request.getParameter("phone");
 
-        String sql = "insert into khach_hang values ('"+username+"',N'"+fullname+"',N'"+address+"','"+phone+"',N'"+password+"','"+ Calendar.getInstance().getTimeInMillis()+"','0','0')";
-        if(Methods.DataSubmit.submit(sql))
+        String sql = "insert into khach_hang values ('"+username+"',N'"+fullname+"',N'"+address+"','"+phone+"',N'"+password+"',GETDATE(),'0','0')";
+        if(Methods.Connecting.submit(sql))
         {
             Cookie ck = new Cookie("username", username);
             response.addCookie(ck);
@@ -47,6 +46,7 @@ public class Register extends HttpServlet {
         }
         else
         {
+            request.setAttribute("error", "Có lỗi, vui lòng nhập lại");
             RequestDispatcher red = request.getRequestDispatcher("Register.jsp");
             red.forward(request, response);
         }

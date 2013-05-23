@@ -1,8 +1,5 @@
 package Methods;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -27,17 +24,12 @@ public class CheckUser {
     public static boolean checkUser(String user, String pass) {
         boolean isOk = false;
         try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection conn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=Laptop;user=sa;password=trunghiu9");
-
-            PreparedStatement pps = conn.prepareStatement("SELECT ma_khach_hang,mat_khau FROM KHACH_HANG");
-            ResultSet rs = pps.executeQuery();
+            ResultSet rs = Connecting.getData("SELECT ma_khach_hang,mat_khau FROM KHACH_HANG");
             while (rs.next()) {
                 if ((user.equals(rs.getString("MA_KHACH_HANG"))) && (pass.equals(rs.getString("MAT_KHAU")))) {
                     isOk = true;
                 }
             }
-            conn.close();
         } catch (Exception ex) {
             System.out.println(ex.toString());
         }
@@ -66,5 +58,20 @@ public class CheckUser {
         } catch (Exception ex) {
             return false;
         }
+    }
+    
+    public static boolean checkUserExist(String user) {
+        boolean isOk = false;
+        try {
+            ResultSet rs = Connecting.getData("SELECT ma_khach_hang FROM KHACH_HANG");
+            while (rs.next()) {
+                if (user.equals(rs.getString("MA_KHACH_HANG"))) {
+                    isOk = true;
+                }
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.toString());
+        }
+        return isOk;
     }
 }
