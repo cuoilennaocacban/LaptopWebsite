@@ -37,18 +37,14 @@ public class CheckUser {
     }
 
     public static boolean Loged(HttpServletRequest request, HttpServletResponse response) {
-        String username = "";
-        String password = "";
+        String loged = "false";
         try {
             for (Cookie ck : request.getCookies()) {
-                if (ck.getName().equals("username")) {
-                    username = ck.getValue();
-                }
-                if (ck.getName().equals("password")) {
-                    password = ck.getValue();
+                if (ck.getName().equals("loged")) {
+                    loged = ck.getValue();
                 }
             }
-            if (Methods.CheckUser.checkUser(username, password)) {
+            if (loged.equals("true")) {
                 return true;
 
             } else {

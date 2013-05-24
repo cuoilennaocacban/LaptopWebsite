@@ -15,19 +15,22 @@
                         <div class="mod-content clearfix">
                             <div class="mod-inner clearfix">
                                 <div class="custom"  >
-                                    <p><span style="line-height: 14px;">Hôm nay?</span><br /><span style="color: #1b5d6d;"><span style="font-size: 28px; line-height: 33px;">Giảm 10%</span></span></p></div>
+                                    <p style="text-align: center;"><span style="line-height: 1.2;"><strong><span class="sp-color">Khuyến mãi hôm nay</span></strong></span></p>
+                                    <p style="text-align: center;"><span style="font-family: times new roman,times; color: #000000;"><strong>10%</strong></span></p>
+                                    <p style="text-align: center;"><span style="color: #888;">Tặng chuột không dây</span></p></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="gap"></div>
             </div></div>
-        <div style="width:33.333%" class="sp-block  separator"><div id="sp-user2" class="mod-block sp-user2 ">	<div class="module_hot">
+        <div style="width:33.333%" class="sp-block  separator"><div id="sp-user2" class="mod-block sp-user2 ">
+                <div class="module_hot">
                     <div class="mod-wrapper clearfix">
                         <div class="mod-content clearfix">
                             <div class="mod-inner clearfix">
                                 <div class="custom_hot"  >
-                                    <p><span style="font-size: 25px; color: #989898;"><br />Hỗ trợ trả góp</span></p>
+                                    <p><span style="color: #989898;"><br />Hỗ trợ trả góp</span></p>
                                     <p style="margin: 0;"><span style="color: #989898; line-height: 1.2;">Mr. Tuấn<br/></span></p>
                                     <p style="margin: 0;"><span style="color: #ff0000; font-size: large;">0902996889</span></p></div>
                             </div>
@@ -37,14 +40,15 @@
                 <div class="gap"></div>
             </div>
         </div>
-        <div style="width:33.333%" class="sp-block "><div id="sp-user3" class="mod-block sp-user3  last">	<div class="module">
+        <div style="width:33.333%" class="sp-block "><div id="sp-user3" class="mod-block sp-user3  last">
+                <div class="module">
                     <div class="mod-wrapper clearfix">
 
                         <div class="mod-content clearfix">
                             <div class="mod-inner clearfix">
                                 <div class="custom"  >
-                                    <p style="text-align: center;"><span style="font-size: 32px; line-height: 1.2;"><strong><span class="sp-color">Liên hệ bảo hành</span></strong></span></p>
-                                    <p style="text-align: center;"><span style="font-size: 23px; font-family: times new roman,times; color: #000000;"><strong>0165 3399 789</strong></span></p>
+                                    <p style="text-align: center;"><span style="line-height: 1.2;"><strong><span class="sp-color">Liên hệ bảo hành</span></strong></span></p>
+                                    <p style="text-align: center;"><span style="font-family: times new roman,times; color: #000000;"><strong>0165 3399 789</strong></span></p>
                                     <p style="text-align: center;"><span style="color: #888;">24/24</span></p></div>
                             </div>
                         </div>

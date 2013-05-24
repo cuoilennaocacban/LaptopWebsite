@@ -39,7 +39,8 @@
                         <div class="clr"></div>
                         <div>
                             <%
-                                if (Methods.CheckUser.Loged(request, response)) {
+                                boolean loged = Methods.CheckUser.Loged(request, response);
+                                if (loged) {
                             %>
                             <a href="basket"><input type="submit" value="Vỏ Hàng"></a>
                             <a href="account"><input type="submit" value="Tài Khoản"></a>

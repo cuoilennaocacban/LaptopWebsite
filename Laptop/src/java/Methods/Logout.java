@@ -27,11 +27,9 @@ public class Logout extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ClassNotFoundException, SQLException {
         Methods.Onlines.outOnline();
-        Cookie ck = new Cookie("username", null);
+        Cookie ck = new Cookie("loged", "false");
         response.addCookie(ck);
-        ck = new Cookie("password", null);
-        response.addCookie(ck);
-        RequestDispatcher red = request.getRequestDispatcher("#");
+        RequestDispatcher red = request.getRequestDispatcher("home");
         red.forward(request, response);
     }
 
@@ -40,9 +38,7 @@ public class Logout extends HttpServlet {
             throws ServletException, IOException {
         try {
             processRequest(request, response);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Logout.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
+        } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Logout.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -52,9 +48,7 @@ public class Logout extends HttpServlet {
             throws ServletException, IOException {
         try {
             processRequest(request, response);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Logout.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
+        } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Logout.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

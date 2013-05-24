@@ -87,7 +87,7 @@
                                                                             <a href="addtocard"><input type="submit" value="Thêm vào vỏ hàng"></input></a>
                                                                                 <%} else {
                                                                                 %>
-                                                                            <a href="login.jsp"><input type="submit" value="Đăng nhập để đặt hàng"></input></a>
+                                                                            <a href="Login.jsp"><input type="submit" value="Đăng nhập để đặt hàng"></input></a>
                                                                                 <%                                                                                        }
                                                                                 %>
                                                                         </dv>

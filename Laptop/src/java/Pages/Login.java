@@ -24,15 +24,15 @@ public class Login extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         if (Methods.CheckUser.checkUser(username, password)) {
-            Cookie ck = new Cookie("username", username);
+            Cookie ck = new Cookie("loged", "true");
             response.addCookie(ck);
-            ck = new Cookie("password", password);
+            ck = new Cookie("username", username);
             response.addCookie(ck);
             RequestDispatcher red = request.getRequestDispatcher("home");
             red.forward(request, response);
         } else {
             request.setAttribute("error", "Có lỗi, vui lòng đăng nhập lại");
-            RequestDispatcher red = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher red = request.getRequestDispatcher("Login.jsp");
             red.forward(request, response);
         }
 
